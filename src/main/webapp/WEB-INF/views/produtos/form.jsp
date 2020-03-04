@@ -10,13 +10,6 @@
 		<title>Livro de Java, Android, iPhone, Ruby, PHP e muito mais - Casa do Código </title>
 		<c:url value="/resources/css" var="cssPath" />
 		<link rel="stylesheet" href="${cssPath}/bootstrap.min.css" />
-		<link rel="stylesheet" href="${cssPath}/bootstrap-theme.min.css" />
-		
-		<style type="text/css">
-	        body{
-	            padding: 60px 0px;
-	        }
-    	</style>		
 		
 	</head>
 	<body>
