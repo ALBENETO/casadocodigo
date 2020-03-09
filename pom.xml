@@ -13,7 +13,7 @@
 		<dependency>
 		    <groupId>org.springframework</groupId>
 		    <artifactId>spring-webmvc</artifactId>
-		    <version>5.2.2.RELEASE</version>
+		    <version>5.2.4.RELEASE</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-servlet-api -->
 		<dependency>
@@ -103,7 +103,7 @@
 		<dependency>
 		    <groupId>org.springframework</groupId>
 		    <artifactId>spring-orm</artifactId>
-		    <version>5.2.2.RELEASE</version>
+		    <version>5.2.4.RELEASE</version>
 		</dependency>
         <dependency>
             <groupId>mysql</groupId>
@@ -144,40 +144,32 @@
 		<dependency>
 		    <groupId>org.springframework</groupId>
 		    <artifactId>spring-context-support</artifactId>
-		    <version>4.1.0.RELEASE</version>
+		    <version>4.3.26.RELEASE</version>
 		</dependency>
 		<!-- Spring Security -->
+		<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-config -->
 		<dependency>
 		    <groupId>org.springframework.security</groupId>
 		    <artifactId>spring-security-config</artifactId>
-		    <version>4.0.0.RELEASE</version>
+		    <version>5.2.1.RELEASE</version>
 		</dependency>
 		<dependency>
 		    <groupId>org.springframework.security</groupId>
 		    <artifactId>spring-security-taglibs</artifactId>
-		    <version>4.0.0.RELEASE</version>
+		    <version>5.2.1.RELEASE</version>
 		</dependency>
+
 		<dependency>
 		    <groupId>org.springframework.security</groupId>
 		    <artifactId>spring-security-web</artifactId>
-		    <version>4.0.0.RELEASE</version>
+		    <version>5.2.1.RELEASE</version>
 		</dependency>
 		<dependency>
 		    <groupId>org.springframework.security</groupId>
 		    <artifactId>spring-security-core</artifactId>
-		    <version>4.0.0.RELEASE</version>
-		</dependency>		
+		    <version>5.2.1.RELEASE</version>
+		</dependency>
 	</dependencies>	
-	<repositories>
-		<repository>
-			<id>spring-milestones</id>
-			<name>Spring Milestones</name>
-			<url>http://repo.spring.io/milestone</url>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</repository>
-	</repositories>
 	<properties>
 		<failOnMissingWebXml>false</failOnMissingWebXml>
 		<maven.compiler.source>1.8</maven.compiler.source>

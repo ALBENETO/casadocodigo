@@ -17,7 +17,7 @@ public class HomeController {
 	@Autowired
 	private ProdutoDAO produtoDao;
 
-	@RequestMapping("/")
+	@RequestMapping("/index")
 	@Cacheable(value = "produtosHome")
 	public ModelAndView index() {
 		List<Produto> produtos = produtoDao.listar();

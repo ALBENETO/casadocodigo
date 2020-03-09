@@ -6,6 +6,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<c:set var="urlBase" value="${pageContext.request.contextPath }"></c:set>
 	<c:url value="/" var="contextPath" />
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
@@ -44,7 +45,7 @@
 
   <header id="layout-header">
 		<div class="clearfix container">
-			<a href="${s:mvcUrl('HC#index').build() }" id="logo">
+			<a href="${urlBase}/index" id="logo">
 			</a>
 			<div id="header-content">
 				<nav id="main-nav">
