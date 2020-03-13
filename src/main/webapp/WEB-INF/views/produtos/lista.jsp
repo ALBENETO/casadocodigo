@@ -1,7 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ taglib uri="http://www.springframework.org/tags" prefix="s" %>    
+<%@ taglib uri="http://www.springframework.org/tags" prefix="s" %>
+<%@ taglib uri="http://www.springframework.org/security/tags" prefix="security" %>    
 <!DOCTYPE html>
 <html>
 	<head>
@@ -20,13 +21,22 @@
 			  </button>
 	
 			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-			    <ul class="navbar-nav mr-auto">
-			      <li class="nav-item active">
-			        <a class="nav-link" href="${urlBase }/produtos">Lista de Produtos<span class="sr-only">(current)</span></a>
-			      </li>
-			      <li class="nav-item">
-			        <a class="nav-link" href="${urlBase }/produtos/form">Cadastro de Produtos</a>
-			      </li>
+					<ul class="navbar-nav mr-auto">
+					  <li class="nav-item active">
+					    <a class="nav-link" href="${urlBase }/produtos">Lista de Produtos<span class="sr-only">(current)</span></a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" href="${urlBase }/produtos/form">Cadastro de Produtos</a>
+					   </li>
+					</ul>
+					 <ul class="nav navbar-nav navbar-right">
+					<li>
+				      	<a href="">
+				      		<security:authentication property="principal" var="usuario"/>
+				      		Usuário: ${usuario.usernamem }
+				      	</a>
+					    </li>
+					 </ul>   
 			  </div>
 		</nav>
 			
