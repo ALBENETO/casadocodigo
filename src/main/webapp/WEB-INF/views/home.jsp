@@ -59,6 +59,7 @@
 			<li class="category"><a href="/collections/livros-de-mobile"> Mobile </a></li>
 			<li class="category"><a href="/collections/livros-desenvolvimento-web"> Web </a></li>
 			<li class="category"><a href="/collections/outros"> Outros </a></li>
+			<li class="category"><a href="${contextPath }logout"> Sair </a></li>
 		</ul>
 	</nav>
 

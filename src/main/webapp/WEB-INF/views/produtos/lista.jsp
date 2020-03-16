@@ -29,14 +29,19 @@
 					    <a class="nav-link" href="${urlBase }/produtos/form">Cadastro de Produtos</a>
 					   </li>
 					</ul>
-					 <ul class="nav navbar-nav navbar-right">
-					<li>
-				      	<a href="">
-				      		<security:authentication property="principal" var="usuario"/>
-				      		Usuário: ${usuario.username }
-				      	</a>
-					    </li>
-					 </ul>   
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+				      		<a href="">
+				      			<security:authentication property="principal" var="usuario"/>
+				      			Usuário: ${usuario.username }
+				      		</a>
+					   	</li>
+					</ul>   
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+				      		<a href="${urlBase }/logout">Sair</a>
+					   	</li>
+					</ul>					
 			  </div>
 		</nav>
 			
