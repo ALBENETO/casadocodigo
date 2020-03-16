@@ -114,6 +114,7 @@
 		    </ul>
 		    <button type="submit" class="submit-image icon-basket-alt" 
 		        title="Compre Agora ${produto.titulo}"></button>
+		    <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token }">    
 		</form>
 	</section>
 	  

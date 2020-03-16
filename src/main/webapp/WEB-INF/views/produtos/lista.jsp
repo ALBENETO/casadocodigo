@@ -33,7 +33,7 @@
 					<li>
 				      	<a href="">
 				      		<security:authentication property="principal" var="usuario"/>
-				      		Usuário: ${usuario.usernamem }
+				      		Usuário: ${usuario.username }
 				      	</a>
 					    </li>
 					 </ul>   
